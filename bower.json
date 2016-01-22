@@ -1,0 +1,24 @@
+{
+  "name": "go",
+  "dependencies": {
+    "jquery": "~1.12.0",
+    "normalize-css": "normalize.css#~3.0.3",
+    "tooltipster": "~3.3.0"
+  },
+  "authors": [
+    "Vyacheslav Kovalyev <lunatikspb@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower",
+    "test",
+    "tests"
+  ]
+}
