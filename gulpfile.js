@@ -7,21 +7,36 @@ var gulp = require('gulp'),
 	notify_growl = require('gulp-notify-growl'),
 	browserSync = require('browser-sync'),
 	googlecdn = require('gulp-google-cdn'),
+	modernizr = require('gulp-modernizr'),
 	notify = require('gulp-notify');
-
-    return gulp.src('index.html')
-        .pipe(googlecdn(require('./bower.json')))
-        .pipe(gulp.dest('./'));
-});
 
 gulp.task('server',function(){
 	browserSync({
 		port:9000,
 		server:{
-			baseDir:'./'
+			baseDir:''
 		}
 	})
 })
+
+gulp.task('modernizr',function(){
+	gulp.src('app/js/*.js')
+		.pipe(modernizr(
+			{
+			// Подключение недостаточных опций
+				"options":[
+					"setClasess",
+					"html5shiv"
+				],
+			// Подключение необходимых тестов
+				"tests":["placeholder","cssanimations"],
+				// собрать в миницикации
+				"ugly":true,
+			} 
+			))
+		.pipe(gulp.dest("app/js/vendor"))
+});
+
 
 gulp.task('style', function() {
   gulp.src('css/*.css')
@@ -47,5 +62,5 @@ gulp.task('watch',function(){
 		'app/css/**/*.css'
 		]).on('change',browserSync.reload);
 })
-
-gulp.task('default',['watch','server']);
+// Работа по запуску -> gulp
+gulp.task('default',['modernizr','server','watch']);
