@@ -8,6 +8,7 @@
 	<meta name="keywords" content="">
 	<meta name="author" content="vk.com/slava_is_online">
 	<meta name="copyright" content="vk.com/slava_is_online">
+
 	<meta http-equiv="Reply-to" content="">
 	<title>( ͡0 ͜ʖ ͡0) =(^⊙.⊙^)=  (つツ)つ</title>
 	<!-- Bower css -->
@@ -15,6 +16,7 @@
 	<!-- CSS -->
 	<!-- <link rel="stylesheet" href="css/bundle.min.css"> -->
 	<link rel="stylesheet" href="css/mediaQueries.css">
+	<link rel="stylesheet" href="css/sprite.css">
 	<link rel="stylesheet" href="css/test.css">
 
 	<!-- Modernizer -->
@@ -35,18 +37,23 @@ current/context=result
 </div>
 
 <header class="header">
-<img class="header_img" src="img/storm-light-hd.jpg" alt="">
-	<div id="social_icon">
-		<ul>
-			<li><a class="icon-vk" href="https://vk.com/slava_is_online"></a></li>
-			<li><a class="icon-tw" href="https://twitter.com"></a></li>
-			<li><a title="Facebook" target="_blank" class="icon-facebook" href="https://facebook.com"></a></li>
-			<li><a class="icon-github" href="https://github.com/sqlapk"></a></li>
-		</ul>
+	<div class="container_full">
+		<div class="header_logo">
+			<img class="img_logo" src="img/all_icons_4sprite/logo.png" height="71" width="95" alt="logo">
+		</div>
+		
+		<div id="social_icon">
+			<ul>
+				<li><a class="icon-vk" href="https://vk.com/slava_is_online"></a></li>
+				<li><a class="icon-twitter" href="https://twitter.com"></a></li>
+				<li><a title="Facebook" target="_blank" class="icon-facebook" href="https://facebook.com"></a></li>
+				<li><a class="icon-github" href="https://github.com/sqlapk"></a></li>
+			</ul>
+		</div>
 	</div>
 </header>
 
-<div class="container">
+<div class="container_full container">
 	<div class="row">
 		<div class="cols col-3 aside">
 			<aside class="aside sidebar vertical_menu">
@@ -110,6 +117,8 @@ current/context=result
 	<footer class="footer">
 		
 	</footer>
+
+
 	<!-- js -->
 	<script src="app/bower/jquery/dist/jquery.min.js"></script>
 </body>

@@ -1,0 +1,131 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<!-- `display: block` sprite -->
+<div class="icon-home"></div>
+
+<!-- `display: inline-block` sprite -->
+<img class="icon-home" />
+```
+*/
+.icon-after {
+  background-image: url(../img/sprite.png);
+  background-position: -233px -40px;
+  width: 4px;
+  height: 18px;
+}
+.icon-before {
+  background-image: url(../img/sprite.png);
+  background-position: -224px -40px;
+  width: 9px;
+  height: 18px;
+}
+.icon-brief-case {
+  background-image: url(../img/sprite.png);
+  background-position: -53px -71px;
+  width: 53px;
+  height: 55px;
+}
+.icon-email копия {
+  background-image: url(../img/sprite.png);
+  background-position: -201px -101px;
+  width: 20px;
+  height: 20px;
+}
+.icon-facebook {
+  background-image: url(../img/sprite.png);
+  background-position: -114px -126px;
+  width: 38px;
+  height: 40px;
+}
+.icon-facebook:hover {
+  background-image: url(../img/sprite.png);
+  background-position: -152px -126px;
+  width: 38px;
+  height: 40px;
+}
+.icon-file {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -71px;
+  width: 53px;
+  height: 55px;
+}
+.icon-github {
+  background-image: url(../img/sprite.png);
+  background-position: -106px -71px;
+  width: 38px;
+  height: 40px;
+}
+.icon-github:hover {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -126px;
+  width: 38px;
+  height: 40px;
+}
+.icon-graduate {
+  background-image: url(../img/sprite.png);
+  background-position: -95px 0px;
+  width: 53px;
+  height: 55px;
+}
+.icon-locked {
+  background-image: url(../img/sprite.png);
+  background-position: -201px -121px;
+  width: 18px;
+  height: 21px;
+}
+.icon-logo {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 95px;
+  height: 71px;
+}
+.icon-school {
+  background-image: url(../img/sprite.png);
+  background-position: -148px 0px;
+  width: 53px;
+  height: 55px;
+}
+.icon-skype{
+  background-image: url(../img/sprite.png);
+  background-position: -201px -81px;
+  width: 20px;
+  height: 20px;
+}
+.icon-telephone{
+  background-image: url(../img/sprite.png);
+  background-position: -201px -61px;
+  width: 20px;
+  height: 20px;
+}
+.icon-twitter {
+  background-image: url(../img/sprite.png);
+  background-position: -201px 0px;
+  width: 38px;
+  height: 40px;
+}
+.icon-twitter:hover {
+  background-image: url(../img/sprite.png);
+  background-position: -38px -126px;
+  width: 38px;
+  height: 40px;
+}
+.icon-unlocked {
+  background-image: url(../img/sprite.png);
+  background-position: -201px -40px;
+  width: 23px;
+  height: 21px;
+}
+.icon-vk {
+  background-image: url(../img/sprite.png);
+  background-position: -76px -126px;
+  width: 38px;
+  height: 40px;
+}
+.icon-vk:hover {
+  background-image: url(../img/sprite.png);
+  background-position: -148px -55px;
+  width: 38px;
+  height: 40px;
+}

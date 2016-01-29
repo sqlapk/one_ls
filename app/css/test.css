@@ -7,10 +7,10 @@ body{
 	height:90px;
 }
 #social_icon{
-    padding-top:20px;
-    width:260px;
-    display:block;
-    float:right;
+    padding-top: 20px;
+    width: 260px;
+    display: inline-block;
+    float: right;
 }
 #social_icon ul{
     padding-left: 0px;
@@ -33,7 +33,12 @@ nav{
     float:left;
     /*position:fixed;*/
 }
-
+.container_full{
+	margin:0 auto;
+}
+.header_logo{
+	display:inline-block;
+}
 .header{
 	max-height:90px;
 	background:#6f6d6d;

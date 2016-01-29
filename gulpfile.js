@@ -8,7 +8,9 @@ var gulp = require('gulp'),
 	browserSync = require('browser-sync'),
 	googlecdn = require('gulp-google-cdn'),
 	modernizr = require('gulp-modernizr'),
-	notify = require('gulp-notify');
+	notify = require('gulp-notify'),
+	spritesmith = require('gulp.spritesmith'),
+	stylus = require('gulp-stylus');
 
 gulp.task('server',function(){
 	browserSync({
@@ -18,6 +20,18 @@ gulp.task('server',function(){
 		}
 	})
 })
+
+gulp.task('sprite', function() {
+    var spriteData =
+        gulp.src('app/img/all_icons_4sprite/*.*') // путь, откуда берем картинки для спрайта
+            .pipe(spritesmith({
+                imgName: 'sprite.png',
+                cssName: 'sprite.css'
+            }));
+
+    spriteData.img.pipe(gulp.dest('app/img/')); // путь, куда сохраняем картинку
+    spriteData.css.pipe(gulp.dest('app/css/')); // путь, куда сохраняем стили
+});
 
 gulp.task('modernizr',function(){
 	gulp.src('app/js/*.js')
